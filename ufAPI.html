@@ -7,40 +7,37 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="tailwind.css">
+    <link rel="stylesheet" href="style.css">
+    
    
     <style>
-        @tailwind base;
-        @tailwind components;
-        @tailwind utilities;
-
         *{font-family: 'Poppins', sans-serif !important;}
 
         #result{ display: none; }
     </style>
 </head>
-<body class="bg-gray-50 flex items-center justify-center h-screen p-8">
-    <div class="bg-white flex flex-col items-center justify-center py-8 px-2 md:py-11 md:px-8 w-full mx-4 md:w-2/5 shadow-sm">
-        <h1 class="text-md md:text-2xl font-bold text-center">Escolha sua localidade</h1>
+<body>
+    <div class="box">
+        <h1 class="">Escolha sua localidade</h1>
 
-        <div class="w-full flex flex-col md:flex-row justify-center items-center mt-4 md:mt-8">
-            <div class="w-1/2 mx-1 md:mx-2">
+        <div class="box-selects">
+            <div class="select">
                 <p>Estado</p>
-                <select name="" id="estado" class="w-full h-8 mt-1 border-2 border-white shadow text-sm md:text-md">
+                <select name="" id="estado" class="">
                     <option value="" selected></option>
                 </select>
             </div>
-            <div class="w-1/2 mx-1 md:mx-2 mt-4 md:mt-0">
+            <div class="select ">
                 <p>Cidade</p>
-                <select name="" id="cidade" class="w-full  h-8 mt-1 border-2 border-white shadow text-sm md:text-md">
+                <select name="" id="cidade" class="select1">
                     <option value="" selected></option>
                 </select>
             </div>
         </div>
 
-        <button id="botaoResult" class="escolher py-2 md:py-2 px-4 md:px-8 text-sm md:text-md font-bold mt-8 bg-gray-200 rounded-full text-gray-800">Escolher</button>
+        <button id="botaoResult" class="escolher">Escolher</button>
 
-        <div id="result" class="result mt-2 md:mt-8 text-center text-md ">
+        <div id="result" class="result">
             
         </div>
     </div>
